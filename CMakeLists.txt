@@ -77,8 +77,6 @@ target_link_libraries(TestMuscle ${NAMESPACE_NAME}::MuscleModelPython)
 ## Install library files
 set(INSTALL_CONFIGDIR "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
 
-message(!!!!!!!!!!!!!!!!!!!! ${PYTHON_INSTALL_PATH})
-
 install(TARGETS ${LIBRARY_NAME}
 	EXPORT ${LIB_EXPORT_NAME}
 	LIBRARY DESTINATION "${PYTHON_INSTALL_PATH}"

@@ -239,5 +239,7 @@ BOOST_PYTHON_MODULE(MuscleModelPython)
 	bp::class_<TwoMuscleModel, boost::noncopyable>("TwoMuscleModel")
 	        .def("Integrate", &TwoMuscleModel::Integrate)
 	        .def("GetTorque", &TwoMuscleModel::GetTorque)
+	        .def("SetJointPos", &TwoMuscleModel::SetJointPos)
+	        .def("SetJointVel", &TwoMuscleModel::SetJointVel)
 	        .def("SetStimulus", &TwoMuscleModel::SetStimulus);
 }
